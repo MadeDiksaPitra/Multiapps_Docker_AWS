@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 800px; /* Mengatur lebar maksimum konten */
+    margin: 20px auto; /* Pusatkan konten dan tambahkan margin atas/bawah */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #075e54;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.form-container {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%; /* Berikan ruang untuk border */
+    padding: 10px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #1ebe57;
+}
+
+.book-list {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 520px; /* Tetapkan tinggi maksimum untuk konten scrollable */
+    overflow-y: auto; /* Aktifkan scroll vertikal jika konten lebih panjang */
+}
+
+li {
+    background-color: #e9f7ef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+li div {
+    flex-grow: 1;
+}
+
+li div p {
+    margin: 0 0 5px; /* Atur margin untuk paragraf */
+}
+
+li div p strong {
+    display: block;
+}
+
+button.delete-button {
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    flex-shrink: 0;
+    width: 25%;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+button.delete-button:hover {
+    background-color: #e60000;
+}
+
+#logoutButton {
+    display: block; /* Mengubah tombol menjadi elemen blok */
+    width: 50%; /* Mengatur lebar tombol */
+    margin: 20px auto; /* Mengatur margin agar rata tengah */
+    padding: 10px;
+    background-color: #ff5733; /* Mengubah warna latar belakang tombol */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#logoutButton:hover {
+    background-color: #cc4626; /* Mengubah warna saat tombol di-hover */
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Ubah lebar untuk perangkat berukuran kecil */
+        margin: 10px auto; /* Ubah margin untuk perangkat berukuran kecil */
+    }
+
+    button, input {
+        width: 100%; /* Setel lebar penuh untuk input dan tombol pada perangkat berukuran kecil */
+    }
+}
